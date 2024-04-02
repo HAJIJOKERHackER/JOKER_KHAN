@@ -168,24 +168,25 @@ EXTRA ='\x1b[38;5;208m'
 #________________________________________#
 
 logo=(f"\033[1;39m
-\033[1;39m======================================================
-\033[1;31m    ____   ____   ___    __ __________ ________    
-\033[1;31m    `MM'  6MMMMb  `MM    d'  `MMMMMMMMM `MMMMMMMb.  
-\033[1;39m      MM  8P    Y8  MM   d'   MM      \  MM    `Mb  
-\033[1;39m      MM 6M      Mb MM  d'    MM         MM     MM  
-\033[1;39m      MM MM      MM MM d'     MM    ,    MM     MM  
-\033[1;39m      MM MM      MM MMd'      MMMMMMM    MM    .M9  
-\033[1;39m      MM MM      MM MMYM.     MM    `    MMMMMMM9'  
-\033[1;39m      MM MM      MM MM YM.    MM         MM  \M\    
-\033[1;39m(8)   MM YM      M9 MM  YM.   MM         MM   \M\   
-\033[1;31m((   ,M9  8b    d8  MM   YM.  MM      /  MM    \M\  
-\033[1;31m YMMMM9    YMMMM9  _MM_   YM._MMMMMMMMM _MM_    \M\_ 
-\033[1;39m======================================================
-\033[1;32m  • \033[1;37m Tool Owner :-  𝐒𝐇𝐀𝐇𝐈 𝐉𝐎𝐊𝐄𝐑 𝐊𝐇𝐀𝐍𝐎
-\033[1;32m  • \033[1;37m GitHub     :-  𝐇𝐀𝐂𝐊𝐄𝐑 𝐃𝐀 𝐓𝐄𝐑𝐌𝐔𝐗
-\033[1;32m  • \033[1;37m Type       :-  Free
-\033[1;32m  • \033[1;37m Version    :-  {version}1.0
-\033[1;39m======================================================")
+logo=(f"""{WHITE}
+db    db .d8888. .88b  d88. d888888b d888888b 
+88    88 88'  YP 88'YbdP`88   `88'     `88'   
+88    88 `8bo.   88  88  88    88       88    
+88    88   `Y8b. 88  88  88    88       88    
+88b  d88 db   8D 88  88  88   .88.     .88.   
+~Y8888P' `8888Y' YP  YP  YP Y888888P Y888888P  {BLUE}X {RED}PATHANI {WHITE}
+
+\t[×] Developed By Usman Gull{EXTRA} (USMII)
+{WHITE}[•] AUTHOR       : Usman Gul
+{WHITE}[•] STYLE         : BUAHAHAHAHAHHAHH
+{WHITE}[•] WhatsApp     :   +923238272402
+[•] FaceBook     :   Usman Gull
+[•] Version      :   {RED}1.3
+{WHITE}[•] YouTube      :   USMII Tech
+
+{WHITE}================================================
+   \33[37;41m\t Sudhair  x Rehan  x Yasir \33[0;m
+{WHITE}=================================================""")
 def linex():
     print('\033[1;39m===============================================')
 def clear():
